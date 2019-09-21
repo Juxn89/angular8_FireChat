@@ -6,9 +6,8 @@
         </button>
     </div>
     <app-login *ngIf="!chatService.usuario.uid"></app-login>
-    <!--
-    <div class="chat-window">
+
+    <div class="chat-window" *ngIf="chatService.usuario.uid">
         <app-chat></app-chat>
     </div>
-    -->
 </div>
